@@ -11,7 +11,11 @@ function submitFunc() {
 
     if (hent_bruker == bruker && hent_pass == pass) {
         utskrift.innerHTML = `Velkommen! Du er logget inn som "${bruker}"`
+        utskrift.classList.add("verified");
+        utskrift.classList.remove("refused");
     } else {
         utskrift.innerHTML = "Brukernavn eller passord var feil!"
+        utskrift.classList.add("refused");
+        utskrift.classList.remove("verified");
     }
 }

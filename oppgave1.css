@@ -1,0 +1,14 @@
+body {
+    background-color: aquamarine;
+}
+
+.verified {
+    background-color: green;
+    color: white;
+}
+
+
+.refused {
+    background-color: red;
+    color: white;
+}
