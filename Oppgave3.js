@@ -35,11 +35,11 @@ function calcPassangers() {
     let elderly = document.getElementById("elderly").value;
 
     
-    total = children * (cost/2) + adults * (cost/1.25) + elderly * cost
+    total = children * (cost/2) + elderly * (cost/1.25) + adults * cost
     writeMesssage2(children, adults, elderly, total)
 }
 
 
-function writeMesssage2(barn, voksen, gammel, w) {
-    output2.innerHTML = `Total billettkostnaden for ${barn} barna, ${voksen} voksne og ${gammel} pensjonister blir ${w}kr`
+function writeMesssage2(barn, voksen, gammel, x) {
+    output2.innerHTML = `Total billettkostnaden for ${barn} barna, ${voksen} voksne og ${gammel} pensjonister blir ${x}kr`
 }
